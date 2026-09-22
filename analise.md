@@ -1,0 +1,1 @@
+1 - A classe ServicoMatricula está com métodos fazendo violação do SRP por conta que ela está com duas responsabilidades, sendo ela a regra dee negócio e inserção no banco de dados. Percebemos uma duplicação do SQL, violação do DIP fazendo que a classe dependa diretamente do BancoSimulado ao invés de uma abstração e também se nota a duplicação da string SQL nos parâmetros dela.
